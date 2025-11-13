@@ -1,3 +1,8 @@
+## 👩‍💻 Sobre mim
+
+* 💻 Sou Dev em formação, atualmente com foco em **Python, SQL, Git, HTML5 e CSS3**.
+* 🌱 Estou sempre construindo projetos e aplicando desafios para aprimorar meus conhecimentos.
+* 🚀 Aqui você vai ver minha jornada e meus projetos de estudo!
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/carolinaropeDev/carolinaropeDev/main/dist/github-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/carolinaropeDev/carolinaropeDev/main/dist/github-snake.svg">
