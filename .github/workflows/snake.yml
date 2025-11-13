@@ -7,15 +7,16 @@ on:
 
 jobs:
   build:
-    # A LINHA MÁGICA QUE FALTAVA:
-    # Dá permissão ao robô para salvar (fazer commit)
+    # Permissão para o robô ler e salvar
     permissions:
       contents: write 
       
     runs-on: ubuntu-latest
     steps:
+      # 1. Baixa o código do seu repositório
       - uses: actions/checkout@v3
 
+      # 2. Gera a animação da cobra
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -24,3 +25,12 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3. O PASSO QUE FALTAVA: Salva a pasta 'dist' no repositório
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add dist
+          git commit -m "Gerar animação de cobra (via Action)" || echo "Nenhuma alteração"
+          git push
