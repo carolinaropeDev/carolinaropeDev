@@ -1,4 +1,8 @@
-## 👩‍💻 Sobre mim
+## Olá, eu sou a Carolina! 👋
+### Estudante de programação backend 💻
+
+---
+### 👩‍💻 Sobre mim
 
 * 💻 Sou Dev em formação, atualmente com foco em **Python, SQL, Git, HTML5 e CSS3**.
 * 🌱 Estou sempre construindo projetos e aplicando desafios para aprimorar meus conhecimentos.
