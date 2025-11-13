@@ -1,4 +1,4 @@
-name: Generate Snake Animation
+name: Gerar animação de cobra
 
 on:
   schedule:
@@ -7,10 +7,15 @@ on:
 
 jobs:
   build:
+    # A LINHA MÁGICA QUE FALTAVA:
+    # Dá permissão ao robô para salvar (fazer commit)
+    permissions:
+      contents: write 
+      
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
